@@ -20,6 +20,12 @@ The data describing the gallery contents is located in photoCardsData.json
 
 Your app should be able to take any json in a similar format and display the relevant gallery.
 
+### Resources
+You don't have to use these, but you may find them helpful:
+
+Create React App - [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
+React Starter Kit - [https://github.com/rm-bergmann/app-starter-kit](https://github.com/rm-bergmann/app-starter-kit)
+
 ---
 ### MVF
 Do you want to work with the Smartest Tech and the Sharpest Minds? Apply at: http://www.mvfglobal.com/vacancies
