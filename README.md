@@ -39,22 +39,46 @@ I have used the following technology to build the application :
 
 ### How it works
 
+We can go to Terminal to set up the environments:
+
 ```
 git clone https://pablobitbucket123@bitbucket.org/pablobitbucket123/mvf_cat_gallery.git
 
 ```
 
-Start the React frontend :
+Install React front end dependencies (from )
+
+```
+cd frontend
+npm install
+```
+
+Install Express backend dependencies
 
 ```
 cd backend
 npm install
-npm start
 ```
 
-Then Start the Express backend
+Also in the backend we need to install knex globally. This is required to set up knex.js with Postgres. We will then be able to configure the DB environments and create seed files.
+
 ```
-cd frontend
-npm install
-npm start
+npm install knex -g
+```
+
+Then you need to go your local postgres Database and create the following  :
+
+```
+psql
+CREATE DATABASE cats_gallery_development;
+CREATE DATABASE cats_gallery_test;
+```
+
+While we are still in the backend folder (in Terminal), we can migrate the tables columns of our respective DB, and also we can seed the files with sample data.
+
+```
+knex migrate:latest --env development
+knex migrate:latest --env test
+knex seed:run --env development
+knex seed:run --env test
 ```
