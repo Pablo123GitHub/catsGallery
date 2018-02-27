@@ -21,11 +21,40 @@ The data describing the gallery contents is located in photoCardsData.json
 Your app should be able to take any json in a similar format and display the relevant gallery.
 
 ### Resources
-You don't have to use these, but you may find them helpful:
 
-Create React App - [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
-React Starter Kit - [https://github.com/rm-bergmann/app-starter-kit](https://github.com/rm-bergmann/app-starter-kit)
+I have used the following technology to build the application :
 
----
-### MVF
-Do you want to work with the Smartest Tech and the Sharpest Minds? Apply at: http://www.mvfglobal.com/vacancies
+- Used [Create React App]( https://github.com/facebook/create-react-app) to create React app on the frontend
+- Used [Express generaator](https://expressjs.com/en/starter/generator.html) to create the backend
+- React comes with many dependencies allowing the app to be run
+- And the same applies to Express who runs on top of Node.JS
+- Knex.js is used as SQL builder/ORM with a postgres Database
+
+
+### How this could be improved
+
+- I have not followed the JSON pattern for photoCardsData.json so I should have designed a permanent data solution matching this JSON format.
+
+
+
+### How it works
+
+```
+git clone https://pablobitbucket123@bitbucket.org/pablobitbucket123/mvf_cat_gallery.git
+
+```
+
+Start the React frontend :
+
+```
+cd backend
+npm install
+npm start
+```
+
+Then Start the Express backend
+```
+cd frontend
+npm install
+npm start
+```
