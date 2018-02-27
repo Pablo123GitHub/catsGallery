@@ -6,9 +6,11 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const cors = require('cors');
+var knex = require('./db/knex');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
+const pictures = require('./routes/pictures');
 
 const app = express();
 
@@ -30,7 +32,6 @@ app.use('/public', express.static(__dirname + '/public'));
 app.post('/upload', (req, res, next) => {
   console.log(req);
   let imageFile = req.files.file;
-
   imageFile.mv(`${__dirname}/public/uploads/${req.body.filename}.jpg`, function(err) {
     if (err) {
       return res.status(500).send(err);
@@ -41,8 +42,11 @@ app.post('/upload', (req, res, next) => {
 
 })
 
+
 app.use('/', index);
 app.use('/users', users);
+app.use('/pictures', pictures);
+
 
 
 // catch 404 and forward to error handler
