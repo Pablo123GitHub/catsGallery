@@ -11,8 +11,7 @@ function showPictures(){
 
 /* GET pictures listing. */
 router.get('/pics', function(req, res, next) {
-  showPictures().then((response)=>{
-    console.log("CANNOT BE EMPTY")
+  showPictures().then((response)=>{  
           res.json(response);
      });
 });

@@ -9,7 +9,6 @@ import { Link, Route, Switch } from 'react-router-dom';
 class App extends Component {
 
 
-
   render() {
     return (
       <div className="App">
@@ -17,13 +16,20 @@ class App extends Component {
       <nav className="navbar navbar-light">
         <ul className="nav navbar-nav">
 
-          <Home/>
-          <Pictures/>
+
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/users">Users</Link></li>
+          <li><Link to="/pictures">Pictures</Link></li>
+          <li><Link to="/upload">Uploader</Link></li>
+
 
         </ul>
        </nav>
 
-
+         <Route path="/" component={Home}/>
+         <Route path="/users" component={Users} {...this.props}/>
+       <Route path="/pictures" component={Pictures} {...this.props}/>
+         <Route path="/upload" component={Main} {...this.props}/>
       </div>
     );
   }

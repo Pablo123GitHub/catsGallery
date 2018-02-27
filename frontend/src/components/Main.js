@@ -31,6 +31,7 @@ class Main extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleUploadImage}>
+        <h1> Uploader </h1>
         <div>
           <input ref={(ref) => { this.uploadInput = ref; }} type="file" />
         </div>

@@ -41,10 +41,6 @@ app.post('/upload', (req, res, next) => {
   });
 
 })
-
-console.log("USER*****", users);
-
-
 app.use('/', index);
 app.use('/users', users);
 
@@ -61,7 +57,6 @@ app.get('/pics', function(req, res, next) {
           res.json(response);
      });
 });
-
 
 
 
