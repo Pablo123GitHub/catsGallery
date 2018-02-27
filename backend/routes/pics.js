@@ -10,8 +10,9 @@ function showPictures(){
 }
 
 /* GET pictures listing. */
-router.get('/pictures', function(req, res, next) {
+router.get('/pics', function(req, res, next) {
   showPictures().then((response)=>{
+    console.log("CANNOT BE EMPTY")
           res.json(response);
      });
 });

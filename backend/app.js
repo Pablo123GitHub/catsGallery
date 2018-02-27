@@ -10,7 +10,7 @@ var knex = require('./db/knex');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
-const pictures = require('./routes/pictures');
+
 
 const app = express();
 
@@ -42,10 +42,26 @@ app.post('/upload', (req, res, next) => {
 
 })
 
+console.log("USER*****", users);
+
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/pictures', pictures);
+
+function showPictures(){
+   return knex.select().from('pictures')
+       .then(function(row){
+           return row;
+       });
+}
+
+/* GET pictures listing. */
+app.get('/pics', function(req, res, next) {
+  showPictures().then((response)=>{
+          res.json(response);
+     });
+});
+
 
 
 
