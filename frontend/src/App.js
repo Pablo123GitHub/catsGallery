@@ -3,21 +3,24 @@ import './App.css';
 import Main from './components/Main';
 import Home from './components/Home';
 import Users from './components/Users';
+import { Link, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
-  state = {users: []}
+  
 
-  componentDidMount() {
-    fetch('/users')
-      .then(res => res.json())
-      .then(users => this.setState({ users }));
-  }
 
   render() {
     return (
       <div className="App">
 
-        <Home />
+      <nav className="navbar navbar-light">
+        <ul className="nav navbar-nav">
+
+          <Home/>
+
+        </ul>
+       </nav>
+
 
       </div>
     );

@@ -17,7 +17,7 @@ class Home extends React.Component {
           <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
 
           <input type="submit" value="Submit"/>
-    </form>
+        </form>
         </div>
     );
   }
