@@ -99,3 +99,21 @@ Then run the frontend :
 cd frontend
 npm start
 ```
+
+Here is a screencast demo :
+
+https://www.screencast.com/t/V5mTjmPZ7Scc
+
+
+
+### What could be improved
+
+- Tests can be improved. 
+
+- The Express JS server serves all the DB data at /pictures and /users endpoint via the PORT=3001 proxy....and React JS displays all of them respectively with Pictures and Users components. Since the data are served for React to use, I should have provided the ability to filter the data at component level probably.
+
+- the Home component form is not linked with the backend. Upon registering the user record should be added to the DB.
+
+- the Upload component is not linked with the backend. Upon uploading, the picture should be inserted into the database. Currently it is just displayed on the page.
+
+- Styling can be improved, definitely.
