@@ -37,7 +37,7 @@ I have used the following technology to build the application :
 
 
 
-### How it works
+### Initial set up
 
 We can go to Terminal to set up the environments:
 
@@ -81,4 +81,21 @@ knex migrate:latest --env development
 knex migrate:latest --env test
 knex seed:run --env development
 knex seed:run --env test
+```
+
+
+### How it works
+
+Run the backend first :
+
+```
+cd backend
+npm start
+```
+
+Then run the frontend :
+
+```
+cd frontend
+npm start
 ```
