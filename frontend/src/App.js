@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Main from './components/Main';
+import Users from './components/Users';
 
 class App extends Component {
   state = {users: []}
@@ -15,10 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <Main />
-        <h1>Users</h1>
-        {this.state.users.map(user =>
-          <div key={user.id}>{user.name} : {user.email}</div>
-        )}
+    <Users users= {this.state.users} />
       </div>
     );
   }

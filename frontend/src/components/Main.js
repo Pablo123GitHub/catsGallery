@@ -5,7 +5,7 @@ class Main extends React.Component {
     super(props);
 
     this.state = {
-      imageURL: '',
+      imageURL: 'https://content.screencast.com/users/Pablo_Zendesk/folders/Jing/media/6af6cdee-3cca-4d9a-a44e-307fc6c09ad8/00000024.png',
     };
 
     this.handleUploadImage = this.handleUploadImage.bind(this);
@@ -41,7 +41,7 @@ class Main extends React.Component {
         <div>
           <button>Upload</button>
         </div>
-        <img src={this.state.imageURL} alt="img" />
+        <img src={this.state.imageURL}  alt="img" />
       </form>
     );
   }
