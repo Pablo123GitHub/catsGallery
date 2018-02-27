@@ -25,7 +25,7 @@ Your app should be able to take any json in a similar format and display the rel
 I have used the following technology to build the application :
 
 - Used [Create React App]( https://github.com/facebook/create-react-app) to create React app on the frontend
-- Used [Express generaator](https://expressjs.com/en/starter/generator.html) to create the backend
+- Used [Express generator](https://expressjs.com/en/starter/generator.html) to create the backend
 - React comes with many dependencies allowing the app to be run
 - And the same applies to Express who runs on top of Node.JS
 - Knex.js is used as SQL builder/ORM with a postgres Database
@@ -33,14 +33,14 @@ I have used the following technology to build the application :
 
 ### Initial set up
 
-We can go to Terminal to set up the environments:
+From a Terminal window : 
 
 ```
 git clone https://pablobitbucket123@bitbucket.org/pablobitbucket123/mvf_cat_gallery.git
 
 ```
 
-Install React front end dependencies (from )
+Install React front end dependencies
 
 ```
 cd frontend
