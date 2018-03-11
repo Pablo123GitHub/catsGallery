@@ -1,6 +1,6 @@
 ## Goal
 
-Create Instagram just for Cats galleries
+Create Instagram just for Cats galleries. 
 
 
 ### Resources
@@ -77,12 +77,12 @@ cd frontend
 npm start
 ```
 
-Here is a screencast demo :
+Here is a screencast of the MVP :
 
-https://www.screencast.com/t/V5mTjmPZ7Scc
+https://www.screencast.com/t/Z57WBLX8SEa
 
 
-### What could be improved
+### What I still have to fix : (work in progress)
 
 - I have run into issues with tests as create-reacte app gives you the flexibility to have a quick React environment but you are limited with the amount of testing dependencies that you can use. I was not able to run tests, and I believe that many other Create-react-app users have been facing a similar [issue](https://github.com/facebook/jest/issues/4419). I should have looked into it right from the start.
 
