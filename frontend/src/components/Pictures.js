@@ -14,9 +14,23 @@ class Pictures extends React.Component {
       <div>
       <h1>Pictures</h1>
       {this.state.pictures.map(picture =>
-        <div key={picture.id}>{picture.description} was liked {picture.likes} times
-            <img src={picture.iconUrl} />
+        <div className ="row" key={picture.id}>
+
+            <div className="col s12 m7">
+                <div className="card">
+                    <div className="card-image">
+                        <img src={picture.iconUrl}/>
+                            <span className="card-title">{picture.description}</span>
+                    </div>
+                    <div className="card-content">
+                        <p> Liked {picture.likes} times</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+
 
 
       )}
